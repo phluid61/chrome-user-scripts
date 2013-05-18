@@ -11,7 +11,7 @@
 // ==/UserScript==
 
 // Plain-text Message Body
-var css = 'body,.YF.a-n,.cw,.yd,u0b{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif!important;}';
+var css = 'body,.YF.a-n,.cw,.yd,.u0b{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif!important;}';
 
 if (typeof addStyle != "undefined") {
     addStyle(css);
