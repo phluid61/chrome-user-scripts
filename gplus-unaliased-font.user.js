@@ -3,15 +3,17 @@
 // @namespace      http://matthew.kerwin.net.au/
 // @description    Disables font aliasing for the new new Google+ layout.
 // @author         Matthew Kerwin
-// @version        1.0.1
+// @version        2.0
 // @include        http://plus.google.com/*
 // @include        https://plus.google.com/*
 // @include        http://*.plus.google.com/*
 // @include        https://*.plus.google.com/*
 // ==/UserScript==
 
-// Plain-text Message Body
-var css = 'body,.YF.a-n,.cw,.yd,.u0b{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif!important;}';
+// Override the Roboto webfont with good old Helvetica/Arial
+var css = '@font-face{font-family:Roboto;font-weight:400;src:local("Helvetica Neue"),local("Helvetica"),local("Arial")}';
+css += '@font-face{font-family:Roboto;font-weight:300;src:local("Helvetica Neue"),local("Helvetica"),local("Arial")}';
+css += '@font-face{font-family:Roboto;font-weight:700;src:local("Helvetica Neue"),local("Helvetica"),local("Arial")}';
 
 if (typeof addStyle != "undefined") {
     addStyle(css);
