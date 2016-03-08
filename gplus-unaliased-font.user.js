@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           Google+ Unaliased Fonts
-// @namespace      http://matthew.kerwin.net.au/
+// @namespace      matthew.kerwin.net.au
 // @description    Disables font aliasing for the new new Google+ layout.
 // @author         Matthew Kerwin
 // @version        2.1
