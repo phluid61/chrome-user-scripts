@@ -41,7 +41,7 @@
   }
   d.addEventListener('DOMContentLoaded',function(){
     // wait *another* 5 seconds, then fix any dates
-    w.setTimeout(function(){
+    w.setInterval(function(){
       var a=d.getElementsByTagName('body');
       for(var i in a){
         s(a[i],0);
