@@ -15,7 +15,7 @@
     if(t==3/*TEXT_NODE*//*||t==4*//*CDATA_SECTION_NODE*/) {
       var x=(g?'.':'-'); // date separator
       var v=e.nodeValue;
-      var w=v.replace(/([1-9]|1[0-2])\/([1-9]|[12][0-9]|3[01])\/(\d\d)/g, function(_,m,d,y){
+      var w=v.replace(/\b([1-9]|1[0-2])\/([1-9]|[12][0-9]|3[01])\/(\d\d)\b/g, function(_,m,d,y){
         if(!g&&y<100){
           if(y<=Y){y=2000+parseInt(y)}
           else{y=1900+parseInt(y)}
